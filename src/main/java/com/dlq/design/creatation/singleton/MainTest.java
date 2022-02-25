@@ -9,5 +9,8 @@ package com.dlq.design.creatation.singleton;
 public class MainTest {
 
     public static void main(String[] args) {
+        HungrySingleton2 instance = HungrySingleton2.INSTANCE;
+        HungrySingleton2 instance2 = HungrySingleton2.INSTANCE;
+        System.out.println(instance == instance2);
     }
 }
