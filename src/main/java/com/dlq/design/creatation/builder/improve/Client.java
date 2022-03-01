@@ -16,6 +16,9 @@ public class Client {
 
         // 完成盖房子，返回产品（普通房子）
         House house = houseDirector.constructHouse();
+        System.out.println(house.getBasic());
+        System.out.println(house.getWall());
+        System.out.println(house.getRoofed());
 
         System.out.println("输出流程");
 
@@ -25,7 +28,10 @@ public class Client {
         // 重置建造者
         houseDirector.setHouseBuilder(highBuilding);
         // 完成盖房子，返回产品（高楼）
-        houseDirector.constructHouse();
+        House highHouse = houseDirector.constructHouse();
+        System.out.println(highHouse.getBasic());
+        System.out.println(highHouse.getWall());
+        System.out.println(highHouse.getRoofed());
 
     }
 }
