@@ -14,15 +14,15 @@ public class Client {
 
         // 客户要一个以新闻形式发布的网站
         WebSite webSite1 = factory.getWebSiteCategory("新闻");
-        webSite1.use();
+        webSite1.use(new User("新浪"));
 
         // 客户要一个以博客形式发布的网站
         WebSite webSite2 = factory.getWebSiteCategory("博客");
-        webSite2.use();
+        webSite2.use(new User("百度"));
 
         // 客户又要一个以博客形式发布的网站
         WebSite webSite3 = factory.getWebSiteCategory("博客");
-        webSite3.use();
+        webSite3.use(new User("阿里"));
 
         System.out.println("网站的分类共 = " + factory.getWebSiteCount());
     }

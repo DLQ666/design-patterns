@@ -8,5 +8,5 @@ package com.dlq.design.structural.flyweight;
  */
 public abstract class WebSite {
 
-    public abstract void use(); // 抽象方法
+    public abstract void use(User user); // 抽象方法
 }
